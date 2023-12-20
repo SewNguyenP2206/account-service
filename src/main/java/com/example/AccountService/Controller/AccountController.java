@@ -5,13 +5,10 @@ import com.example.AccountService.DTO.ResponeAccountDTO;
 import com.example.AccountService.Entity.Account;
 import com.example.AccountService.Service.AccountService;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
-import io.github.resilience4j.retry.annotation.Retry;
-import io.github.resilience4j.timelimiter.annotation.TimeLimiter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
-
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
